@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner e Cadastro</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <h1>Scanner e Cadastro</h1>
+    
+    <!-- Placeholder para o scanner -->
+    <div id="qr-reader" style="width: 300px"></div>
+    
+    <h2>Cadastrar Novo Item</h2>
+    <form id="addItemForm">
+        <label for="itemName">Nome do Item:</label>
+        <input type="text" id="itemName" name="itemName" required>
+        <input type="hidden" id="barcodeResult" name="barcodeResult">
+        <button type="submit">Salvar Item</button>
+    </form>
+
+    <h2>Lista de Itens Cadastrados</h2>
+    <ul id="itemList"></ul>
+
+    <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>
