@@ -7,7 +7,7 @@ function onScanSuccess(decodedText, decodedResult) {
 
 // Inicializa o scanner
 var html5QrcodeScanner = new Html5QrcodeScanner(
-  "barcode-reader", { fps: 10, qrbox: 250 });
+  "qr-reader", { fps: 10, qrbox: 250 });
 html5QrcodeScanner.render(onScanSuccess);
 
 // Função para adicionar um novo item
